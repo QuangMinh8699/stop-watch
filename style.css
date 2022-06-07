@@ -1,0 +1,147 @@
+/* @import url("./assets/css/Color.css"); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap");
+
+:root {
+  --green: #326147;
+  --red: #f24055;
+  --black: #12130e;
+  --orange: #faa15a;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 45vw;
+  height: 25vw;
+  background-color: var(--green);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.title {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.title h1 {
+  font-size: 2vw;
+}
+
+.title p {
+  font-size: 1.8vw;
+}
+
+.stopwatch {
+  width: 100%;
+  height: 60%;
+}
+
+.stopwatch__time {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 2.5vw;
+  color: #fff;
+}
+
+.stopwatch__time-inside {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stopwatch__time-inside .area {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stopwatch__button {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.stopwatch__button input {
+  width: 25%;
+  height: 40%;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  color: var(--black);
+  text-transform: capitalize;
+  transition: 0.25s;
+}
+
+.stopwatch__button input:hover {
+  transition: 0.25s;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
